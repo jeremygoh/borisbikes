@@ -1,4 +1,4 @@
-require "../lib/model.rb"
+require 'cyclist'
 
 describe Cyclist do
 	

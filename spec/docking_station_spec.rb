@@ -1,4 +1,5 @@
-require '../lib/docking_station.rb'
+require 'docking_station'
+
 describe DockingStation do
 
 	let(:station) { DockingStation.new }

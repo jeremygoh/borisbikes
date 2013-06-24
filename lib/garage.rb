@@ -10,6 +10,6 @@ class Garage
 	end
 
 	def hold
-	end
+
 
 end

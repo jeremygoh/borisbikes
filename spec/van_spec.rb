@@ -1,4 +1,4 @@
-require "../lib/van.rb"
+require 'van'
 
 describe Van do
 	let(:my_van){Van.new}
@@ -24,7 +24,7 @@ describe Van do
 
 	it "shouldn't be able to receive a bike if it is full, i.e. it has 10 bikes" do
 		10.times{my_van.receive(:bike)}
-		my_van.receive(:bike).should eq "Can't receive any more bikes as full"
+		my_van.receive(:bike).should eq "Can't receive anymore bikes as full"
 	end
 
 	it "shouldn't recceive a working bike" do

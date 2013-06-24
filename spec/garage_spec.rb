@@ -1,4 +1,4 @@
-require "../lib/garage.rb"
+require 'garage'
 
 describe Garage do
 

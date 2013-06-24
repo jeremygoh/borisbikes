@@ -1,17 +1,15 @@
-require "../lib/bike.rb"
+require 'bike'
+
 describe Bike do
 	let(:my_bike){Bike.new}
+
+	it 'is not broken' do
+		my_bike.should_not be_broken
+	end
+
 	it "should break" do
-	my_bike.respond_to?(:break).should be_true
+		my_bike.break!
+		my_bike.should be_broken
  	end
-
-#sort this test out
- 	it "has a  working state which can be checked" do
- 		my_bike.respond_to?(:state).should be_true
- 		my_bike.state.should eq "yes" || "no"
- 	end
-
-
-
 
 end

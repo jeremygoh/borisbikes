@@ -13,6 +13,7 @@ class Van
   			"Can't receive anymore bikes as full"
        	else
        		@bikes << bike
+       	end
   	end
 
 
@@ -23,5 +24,4 @@ class Van
   			@bikes.pop
   		end		
   	end
-
 end
