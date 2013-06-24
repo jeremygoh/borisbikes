@@ -1,7 +1,11 @@
 class Bike
 
- def break
- end
+
+	def break
+	end
+
+	def state
+	end
 
 end
 
