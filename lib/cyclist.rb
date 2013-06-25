@@ -1,11 +1,23 @@
 class Cyclist
 
-	def rent
+	def initialize
+		@possession = []
 	end
 
-	def ride
+	def has_bike?
+		!@possession.empty?
 	end
 
-	def break
+	def rent(bike)
+		if self.has_bike?
+			"Can't rent another bikes as you have one already."
+		else	
+			@possession << bike
+		end
 	end
+
+	def return(bike)
+		@possession.pop
+	end
+
 end

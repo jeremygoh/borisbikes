@@ -1,15 +1,25 @@
 class Garage
 	
-	def receive
+	def initialize
+		@bikes =[]
 	end
 
-	def fix
+	def has_bikes?
+		!@bikes.empty?
 	end
 
-	def release
+	def receive(bike)
+		if @bikes.count == 10
+			"Can't receive anymore bikes as at maximum capacity (10)."
+		else
+			@bikes << bike
+		end	
 	end
 
-	def hold
+	def release(bike)
+		@bikes.pop
+	end
+
 
 
 end
